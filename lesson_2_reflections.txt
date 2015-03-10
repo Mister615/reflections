@@ -1,18 +1,50 @@
 What happens when you initialize a repository? Why do you need to do it?
 
+	It creates an empty Git repository from a specified directory. You must
+	create a Git repository in order to do anything in Git.
+
 How is the staging area different from the working directory and the repository?
 What value do you think it offers?
+
+	The staging area contains all of the files that are to be committed.  It's 
+	basically a loading dock where the user gets to determine what changes get
+	shipped.  Since there’s a layer between when Git actually saves the data, the
+	user gains a lot more flexibility and control in how they want to save their 
+	work.
 
 How can you use the staging area to make sure you have one commit per logical
 change?
 
+	The "git diff" command allows the user to analyse the changes that were made 
+	in staging area.
+
 What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
 
+	Experimenting with the code or developing new features are some situations when
+	branches would be helpful in keeping the history organized.  Branches would
+	help by allowing the user to accomplish these taks without introducing errors
+	to the master code.
+
+
 How do the diagrams help you visualize the branch structure?
+
+	Branch structure can get quite confusing very quickly and diagrams help to 
+	visualize at what point a branch began and at what point multiple branches
+	merged.
 
 What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
 
+	The result of mergng two branches together is to make one object that contains 
+	all of the changes of the two branches. It is represented in the diagram the way 
+	we do because it's easier to track where the changes came from.
+
+
 What are the pros and cons of Git’s automatic merging vs. always doing merges
 manually?
+
+	Pros: Automatic merging can save the user time by reducing the time required in 
+	merging the two branches.
+	Cons: The code could not merge properly as Git doesn't always know exactly what 
+	the user wants merged when there are conflicts in the code.
