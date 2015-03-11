@@ -36,4 +36,7 @@ and what would be harder?
 When would you want to make changes in a separate branch rather than directly in
 master?  What benefits does each approach have?
 
-    Fill in your answer here
+    To test out a new feature that might interfere with the master branch. Also,
+    working on seperate branches reduces the confusion and wasted time between 
+    team members.
+
